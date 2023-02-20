@@ -345,7 +345,7 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Maybe you think I can do things. Maybe you realized the konami code does things on this website. Maybe you just want to a new friend. Hit me up!',
   items: [
     {
       type: ContactType.Email,
@@ -355,7 +355,7 @@ export const contact: ContactSection = {
     {
       type: ContactType.Location,
       text: 'New York, NY',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      href: 'https://goo.gl/maps/97xdeg2uY5h8QgY48',
     },
     // {
     //   type: ContactType.Instagram,
