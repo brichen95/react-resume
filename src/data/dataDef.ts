@@ -98,7 +98,8 @@ export interface TimelineItem {
  */
 export interface TestimonialSection {
   imageSrc?: string | StaticImageData;
-  testimonials: Testimonial[];
+  real: Testimonial[];
+  troll: Testimonial[];
 }
 
 export interface Testimonial {

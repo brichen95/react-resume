@@ -9,7 +9,7 @@ import useWindow from '../../hooks/useWindow';
 import QuoteIcon from '../Icon/QuoteIcon';
 import Section from '../Layout/Section';
 
-const Testimonials: FC = memo(() => {
+const Testimonials: FC <{trollMode: boolean}> = memo(({trollMode}) => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const [scrollValue, setScrollValue] = useState(0);
   const [parallaxEnabled, setParallaxEnabled] = useState(false);
@@ -19,7 +19,8 @@ const Testimonials: FC = memo(() => {
 
   const {width} = useWindow();
 
-  const {imageSrc, testimonials} = testimonial;
+  const {imageSrc, real, troll} = testimonial;
+  let testimonials = trollMode ? troll : real;
 
   const resolveSrc = useMemo(() => {
     if (!imageSrc) return undefined;

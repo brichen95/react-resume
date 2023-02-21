@@ -320,7 +320,24 @@ export const experience: TimelineItem[] = [
  */
 export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
-  testimonials: [
+  real: [
+    {
+      name: 'Coworker',
+      text: 'Excellent teammate, even better beer pong partner',
+      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+    },
+    {
+      name: 'Former manager',
+      text: 'Two years later we still use the scripts he wrote.',
+      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+    },
+    {
+      name: 'Current manager',
+      text: 'It is impressive how he works across such a breadth of technologies.',
+      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+    },
+  ],
+  troll: [
     {
       name: 'Coworker',
       text: 'I was sober for 7 years until I met this man.',
@@ -336,7 +353,7 @@ export const testimonial: TestimonialSection = {
       text: 'Honestly I am not sure how or why we hired him.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
-  ],
+  ]
 };
 
 /**
