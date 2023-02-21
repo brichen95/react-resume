@@ -29,7 +29,7 @@ const Home: FC = memo(() => {
     <Page description={description} title={title}>
       <KonamiCode func={konamiAction}/>
       <Header />
-      <Hero />
+      <Hero trollMode={trollMode} />
       <About />
       <Resume />
       {/* <Portfolio /> */}

@@ -20,7 +20,7 @@ const Testimonials: FC <{trollMode: boolean}> = memo(({trollMode}) => {
   const {width} = useWindow();
 
   const {imageSrc, real, troll} = testimonial;
-  let testimonials = trollMode ? troll : real;
+  const testimonials = trollMode ? troll : real;
 
   const resolveSrc = useMemo(() => {
     if (!imageSrc) return undefined;

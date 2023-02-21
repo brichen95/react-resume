@@ -71,12 +71,28 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `Hey! I'm Brian Chen`,
-  description: (
+  nameReal: `Hey! I'm Brian Chen`,
+  nameTroll: `Howdy! It's Brian Chen`,
+  descriptionReal: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a NYC based <strong className="text-stone-100">Production Engineer</strong>, currently working
         at <strong className="text-stone-100">Two Sigma</strong> supporting high frequency trading systems.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        In my free time time, you can catch me training <strong className="text-stone-100">Muay Thai</strong>,
+        fiddling in my <strong className="text-stone-100">homelab</strong>, 
+        jamming on my <strong className="text-stone-100">guitar</strong>, 
+        or binging tons of <strong className="text-stone-100">anime</strong>.
+        I also have a <strong className="text-stone-100">cat</strong>.
+      </p>
+    </>
+  ),
+  descriptionTroll: (
+    <>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        I'm a NYC based <strong className="text-stone-100">mega weeb</strong>, currently wondering how
+        he works at <strong className="text-stone-100">Two Sigma</strong> supporting high frequency trading systems.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me training <strong className="text-stone-100">Muay Thai</strong>,

@@ -7,8 +7,10 @@ import {heroData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 import Socials from '../Socials';
 
-const Hero: FC = memo(() => {
-  const {imageSrc, name, description, actions} = heroData;
+const Hero: FC<{trollMode: boolean}> = memo(({trollMode}) => {
+  const {imageSrc, nameReal, nameTroll, descriptionReal, descriptionTroll, actions} = heroData;
+  const name = trollMode ? nameTroll : nameReal;
+  const description = trollMode ? descriptionTroll : descriptionReal;
 
   return (
     <Section noPadding sectionId={SectionId.Hero}>
