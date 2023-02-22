@@ -1,7 +1,6 @@
 import dynamic from 'next/dynamic';
 import {FC, memo, useCallback,useState} from 'react';
 
-// import Konami from 'react-konami-code';
 import Page from '../components/Layout/Page';
 import About from '../components/Sections/About';
 import Contact from '../components/Sections/Contact';
