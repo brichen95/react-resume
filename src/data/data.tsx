@@ -91,15 +91,16 @@ export const heroData: Hero = {
   descriptionTroll: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a NYC based <strong className="text-stone-100">mega weeb</strong>, currently wondering how
-        he works at <strong className="text-stone-100">Two Sigma</strong> supporting high frequency trading systems.
+        I'm a NYC based <strong className="text-stone-100">mega weeb</strong>, currently wondering which
+        anime or show to <strong className="text-stone-100">binge</strong> next.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me training <strong className="text-stone-100">Muay Thai</strong>,
         fiddling in my <strong className="text-stone-100">homelab</strong>, 
         jamming on my <strong className="text-stone-100">guitar</strong>, 
-        or binging tons of <strong className="text-stone-100">anime</strong>.
+        or chugging tons of <strong className="text-stone-100">beer</strong>.
         I also have a <strong className="text-stone-100">cat</strong>.
+        His name is <strong className="text-stone-100">Smokey</strong>.
       </p>
     </>
   ),

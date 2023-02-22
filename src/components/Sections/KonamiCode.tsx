@@ -1,4 +1,4 @@
-import {FC, memo, useEffect, useState} from 'react';
+import {FC, memo, useEffect, useState, useCallback} from 'react';
 
 const KonamiCode: FC <{func: Function}> = memo(({func}) => {
     const KONAMI_CODE = [
@@ -8,19 +8,24 @@ const KonamiCode: FC <{func: Function}> = memo(({func}) => {
         'ArrowLeft', 'ArrowRight',
         'KeyB', 'KeyA',
     ];
-    const [key, setKey] = useState(null);
+
     const [count, setCount] = useState(0);
+
+    const [key, setKey] = useState(null);
+    const keyDownHandler  = useCallback(({ code }) => {
+        setKey(code);
+    }, []);
+    const keyUpHandler = () => setKey(null);
 
     useEffect(() => {
         // const keyDownHandler = ({ code }) => setKey(code);
-        const keyDownHandler: FC <{code: React.SetStateAction<null> }> = ({ code }) => {
-            setKey(code);
-            return;
-        };
-        const keyUpHandler = () => setKey(null);
+        
         global.addEventListener('keydown', keyDownHandler);
         global.addEventListener('keyup', keyUpHandler);
-        return;
+        return () => {
+            global.removeEventListener("keydown", keyDownHandler);
+            global.removeEventListener("keyup", keyUpHandler)
+          }
     }, []);
 
     useEffect(() => {
