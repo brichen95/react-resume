@@ -1,6 +1,6 @@
-import {FC, memo, useEffect, useState, useCallback} from 'react';
+import {FC, memo, useCallback,useEffect, useState} from 'react';
 
-const KonamiCode: FC <{func: Function}> = memo(({func}) => {
+const KonamiCode: FC <{func: (() => void)}> = memo(({func}) => {
     const KONAMI_CODE = [
         'ArrowUp', 'ArrowUp',
         'ArrowDown', 'ArrowDown',
@@ -12,21 +12,19 @@ const KonamiCode: FC <{func: Function}> = memo(({func}) => {
     const [count, setCount] = useState(0);
 
     const [key, setKey] = useState(null);
-    const keyDownHandler  = useCallback(({ code }) => {
+    const keyDownHandler  = useCallback(({code}) => {
         setKey(code);
     }, []);
-    const keyUpHandler = () => setKey(null);
+    const keyUpHandler = useCallback(() => setKey(null), []);
 
-    useEffect(() => {
-        // const keyDownHandler = ({ code }) => setKey(code);
-        
+    useEffect(() => {        
         global.addEventListener('keydown', keyDownHandler);
         global.addEventListener('keyup', keyUpHandler);
         return () => {
             global.removeEventListener("keydown", keyDownHandler);
             global.removeEventListener("keyup", keyUpHandler)
           }
-    }, []);
+    }, [keyDownHandler, keyUpHandler]);
 
     useEffect(() => {
         if (key == null) return;
@@ -42,7 +40,7 @@ const KonamiCode: FC <{func: Function}> = memo(({func}) => {
     }, [key]);
 
     return(
-        <div style={{ display: 'none' }}>yeet</div>
+        <div style={{display: 'none'}}>yeet</div>
     );
 });
 
