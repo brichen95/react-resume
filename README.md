@@ -1,5 +1,7 @@
 # My resume site, built with react
 
+Check it out on [brianchen.me](brianchen.me)!
+
 ### 1. Pre-reqs
 To build this website, you will need to have the latest stable versions of Node and Yarn downloaded and installed on your machine. If you don't already have them, you can get Node [here,](https://nodejs.org/en/download/) and Yarn [here.](https://yarnpkg.com/getting-started/install)
 
