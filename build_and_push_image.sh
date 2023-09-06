@@ -31,8 +31,8 @@ full_image="$registry_host:$registry_port/$image_name"
 read -p "Build and push $full_image:latest? " -n 1 -r
 echo "" 
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-    docker image build --platform=linux/amd64 -t $full_image:$latest .
-    docker image tag -t $full_image:latest
+    docker image build --tag $full_image:latest .
+    docker image tag --tag $full_image:latest
     docker image push $full_image:latest
 else
     echo "Only 'Y' or 'y' accepted."

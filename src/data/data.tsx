@@ -76,30 +76,29 @@ export const heroData: Hero = {
   descriptionReal: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a NYC based <strong className="text-stone-100">Production Engineer</strong>, currently working
-        at <strong className="text-stone-100">Two Sigma</strong> supporting high frequency trading systems.
+        I'm a NYC based <strong className="text-stone-100">Production Engineer</strong>, currently working at{' '}
+        <strong className="text-stone-100">Two Sigma</strong> supporting high frequency trading systems.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training <strong className="text-stone-100">Muay Thai</strong>,
-        fiddling in my <strong className="text-stone-100">homelab</strong>, 
-        jamming on my <strong className="text-stone-100">guitar</strong>, 
-        or binging tons of <strong className="text-stone-100">anime</strong>.
-        I also have a <strong className="text-stone-100">cat</strong>.
+        In my free time time, you can catch me training <strong className="text-stone-100">Muay Thai</strong>, fiddling
+        in my <strong className="text-stone-100">homelab</strong>, jamming on my{' '}
+        <strong className="text-stone-100">guitar</strong>, or binging tons of{' '}
+        <strong className="text-stone-100">anime</strong>. I also have a <strong className="text-stone-100">cat</strong>
+        .
       </p>
     </>
   ),
   descriptionTroll: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a NYC based <strong className="text-stone-100">mega weeb</strong>, currently wondering which
-        anime or show to <strong className="text-stone-100">binge</strong> next.
+        I'm a NYC based <strong className="text-stone-100">mega weeb</strong>, currently wondering which anime or show
+        to <strong className="text-stone-100">binge</strong> next.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training <strong className="text-stone-100">Muay Thai</strong>,
-        fiddling in my <strong className="text-stone-100">homelab</strong>, 
-        jamming on my <strong className="text-stone-100">guitar</strong>, 
-        or chugging tons of <strong className="text-stone-100">beer</strong>.
-        I also have a <strong className="text-stone-100">cat</strong>.
+        In my free time time, you can catch me training <strong className="text-stone-100">Muay Thai</strong>, fiddling
+        in my <strong className="text-stone-100">homelab</strong>, jamming on my{' '}
+        <strong className="text-stone-100">guitar</strong>, or chugging tons of{' '}
+        <strong className="text-stone-100">beer</strong>. I also have a <strong className="text-stone-100">cat</strong>.
         His name is <strong className="text-stone-100">Smokey</strong>.
       </p>
     </>
@@ -289,13 +288,13 @@ export const education: TimelineItem[] = [
     date: 'August 2013 - May 2017',
     location: 'Stony Brook, NY',
     title: 'Stony Brook University',
-    content: <p className='text-sm'>B.E. Computer Engineering. Minor Business. GPA: 3.59/4.00</p>,
+    content: <p className="text-sm">B.E. Computer Engineering. Minor Business. GPA: 3.59/4.00</p>,
   },
   {
     date: 'September 2007 - June 2013',
     location: 'New York, NY',
     title: 'Hunter College High School',
-    content: <p className='text-sm'>GPA: 92.90/100</p>,
+    content: <p className="text-sm">GPA: 92.90/100</p>,
   },
 ];
 
@@ -305,7 +304,7 @@ export const experience: TimelineItem[] = [
     location: 'Two Sigma Securities',
     title: 'Production Engineer',
     content: (
-      <p className='text-sm'>
+      <p className="text-sm">
         At TS, I support, maintain, and create automations/monitoring for high frequency trading systems.
       </p>
     ),
@@ -315,8 +314,8 @@ export const experience: TimelineItem[] = [
     location: 'NYDIG',
     title: 'Infrastructure Engineer',
     content: (
-      <p className='text-sm'>
-       At NYDIG, I created and deployed scripts and applications to automate various back office functions.
+      <p className="text-sm">
+        At NYDIG, I created and deployed scripts and applications to automate various back office functions.
       </p>
     ),
   },
@@ -325,8 +324,9 @@ export const experience: TimelineItem[] = [
     location: 'D. E. Shaw & Co., L.P.',
     title: 'Systems Administrator',
     content: (
-      <p className='text-sm'>
-       At D.E. Shaw, I created various automations and provided front-line technical support for a global user base in Windows and Linux.
+      <p className="text-sm">
+        At D.E. Shaw, I created various automations and provided front-line technical support for a global user base in
+        Windows and Linux.
       </p>
     ),
   },
@@ -340,7 +340,7 @@ export const testimonial: TestimonialSection = {
   real: [
     {
       name: 'Coworker',
-      text: 'Excellent teammate, I don\'t think I\'ve seen him miss a deadline.',
+      text: "Excellent teammate, I don't think I've seen him miss a deadline.",
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
@@ -370,7 +370,7 @@ export const testimonial: TestimonialSection = {
       text: 'Honestly I am not sure how or why we hired him.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
-  ]
+  ],
 };
 
 /**
@@ -379,7 +379,8 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Maybe you think I can do things. Maybe you realized the konami code does things on this website. Maybe you just want to a new friend. Hit me up!',
+  description:
+    'Maybe you think I can do things. Maybe you realized the konami code does things on this website. Maybe you just want to a new friend. Hit me up!',
   items: [
     {
       type: ContactType.Email,

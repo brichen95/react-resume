@@ -9,7 +9,7 @@ import useWindow from '../../hooks/useWindow';
 import QuoteIcon from '../Icon/QuoteIcon';
 import Section from '../Layout/Section';
 
-const Testimonials: FC <{trollMode: boolean}> = memo(({trollMode}) => {
+const Testimonials: FC<{trollMode: boolean}> = memo(({trollMode}) => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const [scrollValue, setScrollValue] = useState(0);
   const [parallaxEnabled, setParallaxEnabled] = useState(false);

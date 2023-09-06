@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic';
-import {FC, memo, useCallback,useState} from 'react';
+import {FC, memo, useCallback, useState} from 'react';
 
 import Page from '../components/Layout/Page';
 import About from '../components/Sections/About';
@@ -20,26 +20,24 @@ const Home: FC = memo(() => {
   const [trollMode, setTrollMode] = useState(false);
 
   const konamiAction = useCallback(() => {
-    alert("ya found me! setting trollmode to " + !trollMode);
+    alert('ya found me! setting trollmode to ' + !trollMode);
     setTrollMode(!trollMode);
   }, [trollMode]);
 
   return (
     <Page description={description} title={title}>
-      <KonamiCode func={konamiAction}/>
+      <KonamiCode func={konamiAction} />
       <Header />
       <Hero trollMode={trollMode} />
       <About />
       <Resume />
       {/* <Portfolio /> */}
-      <Testimonials trollMode={trollMode}/>
+      <Testimonials trollMode={trollMode} />
       <Contact />
       <Footer />
       {/* <Konami action={konamiAction} /> */}
     </Page>
   );
-
-  
 });
 
 export default Home;
