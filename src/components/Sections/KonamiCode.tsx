@@ -17,7 +17,8 @@ const KonamiCode: FC<{func: () => void}> = memo(({func}) => {
   const [count, setCount] = useState(0);
 
   const [key, setKey] = useState(null);
-  const keyDownHandler = useCallback(({code}) => {
+  // eslint-disable-next-line
+  const keyDownHandler = useCallback(({code}: any) => {
     setKey(code);
   }, []);
   const keyUpHandler = useCallback(() => {
